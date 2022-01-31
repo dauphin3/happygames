@@ -1,0 +1,13 @@
+[package]
+name = "db"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "db"
+crate-type = [ "cdylib", "rlib" ]
+
+[dependencies]
+hdk = "0.0.120"
+serde = "1"
+profile = { path = "../profile" }

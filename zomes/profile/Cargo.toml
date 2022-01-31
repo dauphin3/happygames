@@ -1,0 +1,14 @@
+[package]
+name = "profile"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "profile"
+crate-type = [ "cdylib", "rlib" ]
+path = "src/lib.rs"
+
+[dependencies]
+hdk = "0.0.120"
+serde = "1"
+interface = { path = "../../crates/interface" }
